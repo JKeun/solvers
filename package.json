@@ -1,0 +1,19 @@
+{
+  "name": "solvers",
+  "version": "1.0.0",
+  "description": "place of data problem solving for anyone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKeun/solvers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKeun/solvers/issues"
+  },
+  "homepage": "https://github.com/JKeun/solvers#readme"
+}
