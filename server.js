@@ -8,9 +8,14 @@ var projectsRouter = require('./routes/projects')(app);
 var pug = require('pug');
 var path = require('path');
 
+// set view engine 'pug'
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname + "/views"));
 app.set("projects", path.join(__dirname + "/projects"));
+
+// use static files in /public
+app.use("/public", express.static(path.join(__dirname + "/public")));
+
 
 app.set("port", process.env.PORT || 3030);
 
