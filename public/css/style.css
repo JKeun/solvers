@@ -73,5 +73,13 @@ h6 {
 	background-repeat: no-repeat;
 }
 
+.dc-hero-caption > h1 {
+	font-size: 3.5rem;
+	color: #ffffff;
+	line-height: 1;
+}
 
-
+.dc-hero-caption > p {
+	font-size: 1.5rem;
+	color: #aaaaaa;
+}
