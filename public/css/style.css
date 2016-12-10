@@ -83,3 +83,14 @@ h6 {
 	font-size: 1.5rem;
 	color: #aaaaaa;
 }
+
+
+/*
+ * section options
+ */
+
+.dc-content-middle {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
