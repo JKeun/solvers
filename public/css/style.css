@@ -73,6 +73,40 @@ h6 {
 	background-repeat: no-repeat;
 }
 
+.dc-hero-projects {
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('//placehold.it/1920x1080');
+	background-position: 100%, 50%;
+}
+
+.dc-hero-list-sample1 {
+	height: 35vh;
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('//placehold.it/1920x1080');
+	background-position: 100%, 50%;
+
+}
+
+.dc-hero-list-sample2 {
+	height: 35vh;
+	background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('//placehold.it/1920x1080');
+	background-position: 100%, 50%;
+
+}
+
+.dc-hero-sample1 {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('//placehold.it/1920x1080');
+	background-position: 100%, 50%;
+
+}
+
+.dc-hero-sample2 {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('//placehold.it/1920x1080');
+	background-position: 100%, 50%;
+
+}
+
+
 .dc-hero-caption > h1 {
 	font-size: 3.5rem;
 	color: #ffffff;

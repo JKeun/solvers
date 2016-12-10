@@ -1,9 +1,23 @@
 extends ../layout
 
 block content
-    h1 Projects
-    p This is list of projects
+	.uk-cover-background.uk-position-relative.dc-hero-index.dc-hero-projects
+		.uk-position-cover.uk-flex.uk-flex-center.uk-flex-middle
+			.uk-width-medium-1-2.uk-text-center.dc-hero-caption
+				h1 Projects
 
-    ul
-        li
-            a(href="/projects/sample") sample
+
+
+	.uk-cover-background.uk-position-relative.dc-hero-index.dc-hero-list-sample1
+		a(href='/projects/sample1')
+			.uk-position-cover.uk-flex.uk-flex-center.uk-flex-middle
+				.uk-width-medium-1-2.dc-hero-caption
+					h1 Sample #1
+					p This is Sample #1
+
+	.uk-cover-background.uk-position-relative.dc-hero-index.dc-hero-list-sample2
+		a(href='/projects/sample2')
+			.uk-position-cover.uk-flex.uk-flex-center.uk-flex-middle
+				.uk-width-medium-1-2.dc-hero-caption
+					h1 Sample #2
+					p This is Sample #2
