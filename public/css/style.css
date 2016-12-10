@@ -1,0 +1,16 @@
+/*
+ * global font options
+ */
+
+body {
+	font-family: "Roboto Condensed", "Open Sans", Helvetica Neue, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Jockey One", "Open Sans", Helvetica Neue, sans-serif;
+}
