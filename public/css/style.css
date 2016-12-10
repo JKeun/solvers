@@ -27,3 +27,39 @@ h6 {
 	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
 	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
+
+
+/*
+ * navbar options
+ */
+
+.dc-navbar-custom {
+	position: fixed;
+	top: 0;
+	max-width: 1440px;
+	width: 100%;
+	background-color: transparent;
+	color: #fff;
+	z-index: 9999;
+}
+
+.dc-navbar-custom > ul > li > a {
+	color: #fff;
+}
+
+.dc-navbar-fixed {
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	background-color: #fff;
+}
+
+.dc-navbar-fixed > ul > li > a {
+	color: #333;
+}
+
+
+/*
+ * hero options
+ */
+
