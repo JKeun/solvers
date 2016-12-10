@@ -128,3 +128,15 @@ h6 {
 	padding-right: 30px;
 }
 
+
+/*
+ * margin options
+ */
+
+ .dc-margin-top-large {
+ 	margin-top: 40px;
+ }
+
+ .dc-margin-bottom-large {
+ 	margin-bottom: 40px;
+ }
