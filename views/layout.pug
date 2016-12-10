@@ -1,12 +1,13 @@
 doctype html
 
 html
-    include ./partials/head
+	include ./partials/head
 
-    body
-        include ./partials/header
+	body
+		.uk-container.uk-container-center.site-wrapper
+			include ./partials/header
 
-        section#content
-            block content
+			section#content
+				block content
 
-        include ./partials/footer
+			include ./partials/footer

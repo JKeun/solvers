@@ -1,9 +1,23 @@
-h2 Header
+nav.uk-navbar
+	a.uk-navbar-brand.uk-hidden-small(href='/')
+		img(src="//placehold.it/140x40")
+	ul.uk-navbar-nav.uk-navbar-flip.uk-hidden-small
+		li
+			a(href="/")
+				i.fa.fa-home(aria-hidden='true')
+				|		Home
+		li
+			a(href="/about")
+				i.fa.fa-graduation-cap(aria-hidden='true')
+				|		About
+		li
+			a(href="/projects")
+				i.fa.fa-rss(aria-hidden='true')
+				|		Projects
 
-ul
-    li
-        a(href="/") Home
-    li
-        a(href="/about") About
-    li
-        a(href="/projects") Projects
+	a.uk-navbar-toggle.uk-visible-small(href='#offcanvas', data-uk-offcanvas='')
+	.uk-navbar-brand.uk-navbar-center.uk-visible-small
+		img(src='//placehold.it/140x40', width='90', height='30',
+		title='Disceptio', alt='Disceptio')
+
+header

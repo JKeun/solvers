@@ -3,6 +3,7 @@
  */
 
 body {
+	background: #edf0f2;
 	font-family: "Roboto Condensed", "Open Sans", Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +14,16 @@ h4,
 h5,
 h6 {
 	font-family: "Jockey One", "Open Sans", Helvetica Neue, sans-serif;
+}
+
+.site-wrapper {
+	position: relative;
+	background-size: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 0;
+	background: #fff;
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
