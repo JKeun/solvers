@@ -1,0 +1,163 @@
+extends ../layout
+
+block content
+    script(src="/public/js/components/sticky.min.js")
+    script(src='//d3js.org/d3.v4.min.js')
+    script(src='//vizjs.org/viz.v1.1.0.min.js')
+    script(src='/public/js/components/accordion.min.js')
+    link(rel='stylesheet', href='/public/css/2017election.css')
+    .uk-cover-background.uk-position-relative.dc-hero-index.dc-hero-2017election
+        .uk-position-cover.uk-flex.uk-flex-center.uk-flex-middle
+            .uk-width-medium-1-2.uk-text-center.dc-hero-caption
+                h1 2017 Election
+                p Information of 2017 Korean Presidental Election
+                
+                .uk-flex.uk-flex-center.uk-flex-middle
+                    script(src='/public/js/countdown.js', type='text/javascript')
+                    script(type='application/javascript').
+                        var myCountdownTest = new Countdown({
+                        // I'm cheating here... so I don't have to update this every year!
+                        // year : 2042, // <-- This is a better example of what to use.
+                        year: 2017,
+                        month   : 5,
+                        day     : 9,
+                        width   : 300,
+                        height  : 50
+                        });
+
+    .dc-content-middle.uk-margin-top.uk-margin-bottom
+        .uk-grid
+            .uk-width-large-1-1.uk-text-center.uk-margin-top.uk-margin-bottom
+                section#Steps.steps-section
+                    h2.steps-header
+                        | 선거일정
+                    .steps-timeline
+                        .steps-one
+                            img.steps-img(src='http://placehold.it/50/3498DB/FFFFFF', alt='')
+                            h3.steps-name
+                                | 선거기간 개시일
+                            p.steps-description
+                                | 04.17
+                        .steps-two
+                            img.steps-img(src='http://placehold.it/50/3498DB/FFFFFF', alt='')
+                            h3.steps-name
+                                | 재외 투표
+                            p.steps-description
+                                | 04.25 ~ 04.30
+                        .steps-three
+                            img.steps-img(src='http://placehold.it/50/3498DB/FFFFFF', alt='')
+                            h3.steps-name
+                                | 사전 투표
+                            p.steps-description
+                                | 05.04 ~ 05.05
+                        .steps-four
+                            img.steps-img(src='http://placehold.it/50/3498DB/FFFFFF', alt='')
+                            h3.steps-name
+                                | 투표 및 개표
+                            p.steps-description
+                                | 05.09
+
+        .uk-grid
+            .uk-width-large-1-1.uk-margin-top.uk-margin-bottom
+                h2.uk-text-center 지역별, 연령별 인구분포
+                a(href="//bl.ocks.org/NPashaP/cd80ab54c52f80c4d84cad0ba9da72c2" target='_blank')
+                    img(src='//placehold.it/1000x500' style='display:block; margin:auto;')
+
+        .uk-width-large-1-1.uk-margin-top
+            h2.uk-text-center 정당 및 기호
+            p.uk-text-center 후보등록 마감일 기준 의석수에 따라 기호가 배정됩니다.
+        .uk-grid.uk-grid-match(data-uk-grid-match="{target:'.uk-panel'}")
+            .uk-width-large-1-5.uk-width-medium-1-2.uk-margin-bottom
+                .uk-panel.uk-flex.uk-flex-bottom.uk-flex-space-between
+                    img(src='/public/img/2017election/ci-minju.png' alt='더불어민주당')
+                h3.uk-text-center.dc-party-name.dc-party-minju 기호 1번
+
+            .uk-width-large-1-5.uk-width-medium-1-2.uk-margin-bottom
+                .uk-panel.uk-flex.uk-flex-bottom.uk-flex-space-between
+                    img(src='/public/img/2017election/ci-liberty.png' alt='자유한국당')
+                h3.uk-text-center.dc-party-name.dc-party-liberty 기호 2번
+
+            .uk-width-large-1-5.uk-width-medium-1-2.uk-margin-bottom
+                .uk-panel.uk-flex.uk-flex-bottom.uk-flex-space-between
+                    img(src='/public/img/2017election/ci-people.png' alt='국민의당')
+                h3.uk-text-center.dc-party-name.dc-party-people 기호 3번
+
+            .uk-width-large-1-5.uk-width-medium-1-2.uk-margin-bottom
+                .uk-panel.uk-flex.uk-flex-bottom.uk-flex-space-between
+                    img(src='/public/img/2017election/ci-bareun.jpeg' alt='바른정당')
+                h3.uk-text-center.dc-party-name.dc-party-bareun 기호 4번
+
+            .uk-width-large-1-5.uk-width-medium-1-2.uk-margin-bottom
+                .uk-panel.uk-flex.uk-flex-bottom.uk-flex-space-between
+                    img(src='/public/img/2017election/ci-justice.png' alt='정의당')
+                h3.uk-text-center.dc-party-name.dc-party-justice 기호 5번
+        ul.uk-grid
+            li.uk-width-large-1-1.uk-margin-top.uk-margin-bottom
+                h2.uk-text-center 후보별 주요공약
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .dc-commitment-category(data-uk-sticky='{top: 80, boundary: true}')
+                    h2.uk-text-center Category
+                    h3 issue
+                    p Vestibulum id ligula porta felis euismod semper.
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .uk-accordion(data-uk-accordion='{showfirst:false, duration:100, collapse: false}')
+                    h3.dc-party-minju.uk-accordion-title.dc-commitment-title 후보1
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum.
+                    h3.dc-party-liberty.uk-accordion-title.dc-commitment-title 후보2
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum.
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .dc-commitment-category(data-uk-sticky='{top: 80, boundary: true}')
+                    h2.uk-text-center 정치
+                    h3 issue
+                    p Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .uk-accordion(data-uk-accordion='{showfirst:false, duration:100, collapse: false}')
+                    h3.dc-party-minju.uk-accordion-title.dc-commitment-title 문재인
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-liberty.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-people.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-bareun.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-justice.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .dc-commitment-category(data-uk-sticky='{top: 80, boundary: true}')
+                    h2.uk-text-center 경제
+                    h3 issue
+                    p Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            li.uk-width-large-1-2.uk-width-medium-1-1.uk-margin-top.uk-margin-bottom
+                .uk-accordion(data-uk-accordion='{showfirst:false, duration:100, collapse: false}')
+                    h3.dc-party-minju.uk-accordion-title.dc-commitment-title 문재인
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-liberty.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-people.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-bareun.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    h3.dc-party-justice.uk-accordion-title.dc-commitment-title 가나다
+                    .uk-accordion-content
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        p Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
