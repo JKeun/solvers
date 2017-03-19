@@ -27,6 +27,11 @@ block content
 
     .dc-content-middle.uk-margin-top.uk-margin-bottom
         .uk-grid
+            .uk-width-large-1-1
+                progress#progressBar.flat.dc-progress-noshow(value="0")
+                    .dc-progress-container
+                    span.dc-progress-bar
+
             .uk-width-large-1-1.uk-text-center.uk-margin-top.uk-margin-bottom
                 section#Steps.steps-section
                     h2.steps-header
@@ -63,7 +68,7 @@ block content
                 a(href="//bl.ocks.org/NPashaP/cd80ab54c52f80c4d84cad0ba9da72c2" target='_blank')
                     img(src='//placehold.it/1000x500' style='display:block; margin:auto;')
 
-        .uk-width-large-1-1.uk-margin-top
+        .uk-width-large-1-2.uk-margin-top.uk-container-center
             h2.uk-text-center 정당 및 기호
             p.uk-text-center 후보등록 마감일 기준 의석수에 따라 기호가 배정됩니다.
         .uk-grid.uk-grid-match(data-uk-grid-match="{target:'.uk-panel'}")
