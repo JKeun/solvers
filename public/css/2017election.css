@@ -1,0 +1,43 @@
+.dc-party-minju {
+	color: #ffffff;
+	background-color: #004ea1;
+}
+
+.dc-party-liberty {
+	color: #ffffff;
+	background-color: #c9171e;
+}
+
+.dc-party-people {
+	color: #ffffff;
+	background-color: #0d6241;
+}
+
+.dc-party-bareun {
+	color: #ffffff;
+	background-color: #1eb3e8;
+}
+
+.dc-party-justice {
+	color: #000000;
+	background-color: #ffcb08;
+}
+
+.dc-party-independent {
+	color: #ffffff;
+	background-color: #d3d3d3;
+}
+
+.dc-party-name {
+	padding: 5px 0px;
+	font-size: 1.2em;
+}
+.dc-commitment-category {
+
+}
+.dc-commitment-title {
+	margin: auto;
+	width: 80%;
+	padding: 10px 5px;
+	text-align: center;
+}

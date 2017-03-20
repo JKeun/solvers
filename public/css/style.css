@@ -111,9 +111,16 @@ h6 {
 	background-size: cover;
 }
 
-.dc-hero-list-project1 {
+.dc-hero-list-2017election {
 	height: 35vh;
-	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/public/img/project1.png');
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url('/public/img/2017election/election-hero.jpg');
+	background-position: 100%, 50%;
+	background-size: cover;
+}
+
+.dc-hero-2017election {
+	height: 50vh;
+	background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url('/public/img/2017election/election-hero.jpg');
 	background-position: 100%, 50%;
 	background-size: cover;
 }
@@ -121,13 +128,6 @@ h6 {
 .dc-hero-list-project2 {
 	height: 35vh;
 	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('/public/img/project2.jpg');
-	background-position: 100%, 50%;
-	background-size: cover;
-}
-
-.dc-hero-project1 {
-	height: 50vh;
-	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/public/img/project1.png');
 	background-position: 100%, 50%;
 	background-size: cover;
 }
@@ -172,3 +172,195 @@ h6 {
  .dc-margin-bottom-large {
  	margin-bottom: 40px;
  }
+
+/*
+ * timeline
+ */
+
+.section-header, .steps-name {
+  color: #3498DB;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.steps-header {
+  margin-bottom: 20px;
+  text-align: center;
+  color: inherit;
+}
+
+.steps-timeline {
+  outline: 1px dashed rgba(255, 0, 0, 0);
+}
+@media screen and (max-width: 500px) {
+  .steps-timeline {
+    border-left: 2px solid #3498DB;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .steps-timeline {
+    border-top: 2px solid #3498DB;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 12.75%;
+    margin-right: 12.75%;
+  }
+}
+.steps-timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.steps-one,
+.steps-two,
+.steps-three,
+.steps-four {
+  outline: 1px dashed rgba(0, 128, 0, 0);
+}
+@media screen and (max-width: 500px) {
+  .steps-one,
+  .steps-two,
+  .steps-three,
+  .steps-four {
+    margin-left: -25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .steps-one,
+  .steps-two,
+  .steps-three,
+  .steps-four {
+    float: left;
+    width: 25%;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .steps-one,
+  .steps-two,
+  .steps-three {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .steps-one {
+    margin-left: -12.75%;
+    margin-right: 12.75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .steps-four {
+    margin-bottom: -100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .steps-four {
+    margin-left: 12.75%;
+    margin-right: -12.75%;
+  }
+}
+
+.steps-img {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+  .steps-img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.steps-name,
+.steps-description {
+  margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .steps-name {
+    text-align: center;
+  }
+}
+
+.steps-description {
+  overflow: hidden;
+}
+@media screen and (min-width: 500px) {
+  .steps-description {
+    text-align: center;
+  }
+}
+
+/*
+ * progress bar
+ */
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 70px;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 1440px;
+  height: .25em;
+
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+progress::-webkit-dc-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: red;
+}
+
+.flat::-moz-dc-progress-bar {
+  background-color: red;
+}
+
+.dc-progress-noshow {
+	visibility: hidden; !important
+}
+
+.dc-progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+
+.dc-progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
