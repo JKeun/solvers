@@ -3,9 +3,13 @@ $(window).scroll(function() {
 	if($(this).scrollTop() > 50) {
 		$('.dc-navbar-custom').addClass('dc-navbar-fixed');
 		$('progress').removeClass('dc-progress-noshow');
+        $('.dc-logo-text-dark').css({'fill':'#001A33'});
+        $('.dc-logo-poly-dark').css({'fill':'#003366'});
 	} else {
 		$('.dc-navbar-custom').removeClass('dc-navbar-fixed');
 		$('progress').addClass('dc-progress-noshow');
+        $('.dc-logo-text-dark').css({'fill':'#FFFFFF'});
+        $('.dc-logo-poly-dark').css({'fill':'#FFFFFF'});
 	}
 });
 
